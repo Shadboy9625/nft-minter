@@ -46,7 +46,7 @@ const Connect2Phantom = () => {
     };
 
     return (
-        <div className="container mx-auto mt-8 flex justify-center">
+        <div className="container mx-auto mt-8 flex justify-center bg-black">
             {walletAvail ? (
                 <>
                     {!connected ? (

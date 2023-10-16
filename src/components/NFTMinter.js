@@ -82,7 +82,7 @@ const NFTMinter = () => {
         redirect: 'follow'
       };
   
-      const response = await fetch("http://localhost:3000/api/nft", requestOptions);
+      const response = await fetch("https://nft-minter-brown-three.vercel.app/api/nft", requestOptions);
       const data = await response.text();
   
       console.log("Response:", data);
@@ -198,7 +198,7 @@ const NFTMinter = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-8 grid grid-cols-1 gap-4 items-center">
+    <div className="container mx-auto mt-8 grid grid-cols-1 gap-4 items-center bg-black text-white">
       <input
         type="text"
         placeholder="Title"

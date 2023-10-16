@@ -12,18 +12,18 @@ const Home = () => {
   const wallet = useWallet();
 
   return (
-    <div>
+    <div className="bg-black text-white">
       <Head>
-        <title>Dogecaptial NFTMint</title>
+        <title>Mint NFTs fast and easy!</title>
         <meta name="description" content="Connect to Phantom Wallet using Next.js and Tailwind CSS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="text-3xl font-bold text-center mt-8">Dogecaptial NFTMint</h1>
+        <h1 className="text-3xl font-bold text-center mt-8">Dogecapital Presents NFT Minting</h1>
 
         <div className="container mx-auto mt-8 flex justify-center">
-          {wallet.connected ? <NFTMinter /> : <p>Connect Wallet using button on the left top</p>}
+          {wallet.connected ? <NFTMinter /> : <p>Connect Your Solana Wallet using button on the top left corner</p>}
         </div>
         
         <ToastContainer />

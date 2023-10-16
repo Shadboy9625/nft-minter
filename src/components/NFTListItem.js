@@ -8,7 +8,7 @@ const NFTListItem = ({ imageSrc, title }) => {
   };
 
   return (
-    <div className="flex items-center mb-2">
+    <div className="flex items-center mb-2 bg-black text-white">
       <img src={imageSrc} alt="NFT" className="w-20 h-20 mr-2" />
       <div>
         <div>{title}</div>

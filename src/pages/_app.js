@@ -26,12 +26,12 @@ export default function App({ Component, pageProps }) {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallet}>
         <WalletModalProvider>
-          <div className="wallet-button-container">
+          <div className="wallet-button-container bg-black">
             <WalletMultiButton
             className='wallet-button'
             ></WalletMultiButton>
           </div>
-          <Component {...pageProps} />
+          <Component className="bg-black" {...pageProps}/>
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>

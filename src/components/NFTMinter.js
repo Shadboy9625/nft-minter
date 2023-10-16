@@ -198,7 +198,7 @@ const NFTMinter = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-8 grid grid-cols-1 gap-4 items-center bg-black text-white">
+    <div className="container mx-auto mt-8 grid grid-cols-1 gap-4 items-center bg-black">
       <input
         type="text"
         placeholder="Title"
@@ -213,7 +213,7 @@ const NFTMinter = () => {
         onChange={handleDescriptionChange}
         className="p-2 border border-gray-300 rounded"
       />
-      <input type="file" onChange={handleImageChange} accept="image/*" />
+      <input type="file" className="text-white" onChange={handleImageChange} accept="image/*" />
       <button
         className={`col-span-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${isMinting ? 'opacity-50 cursor-not-allowed' : ''}`}
         onClick={mintNFT}

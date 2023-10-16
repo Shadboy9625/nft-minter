@@ -198,7 +198,7 @@ const NFTMinter = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-8 grid grid-cols-1 gap-4 items-center bg-black text-white">
+    <div className="container mx-auto mt-8 grid grid-cols-1 gap-4 items-center bg-black">
       <input
         type="text"
         placeholder="Title"

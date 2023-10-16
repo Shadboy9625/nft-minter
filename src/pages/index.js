@@ -12,7 +12,7 @@ const Home = () => {
   const wallet = useWallet();
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-blue-700">
       <Head>
         <title>Mint NFTs fast and easy!</title>
         <meta name="description" content="Connect to Phantom Wallet using Next.js and Tailwind CSS" />

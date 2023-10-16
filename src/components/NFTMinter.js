@@ -82,7 +82,7 @@ const NFTMinter = () => {
         redirect: 'follow'
       };
   
-      const response = await fetch("https://nft-minter-doge-capital.vercel.app//api/nft", requestOptions);
+      const response = await fetch("https://nft-minter-doge-capital.vercel.app/api/nft", requestOptions);
       const data = await response.text();
   
       console.log("Response:", data);
